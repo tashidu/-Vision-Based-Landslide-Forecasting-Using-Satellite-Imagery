@@ -8,11 +8,28 @@ The project applies modern Deep Learning and Computer Vision techniques to multi
 
 During the Ditwah Cyclonic Storm in 2025, Sri Lanka experienced widespread slope failures. This experimental academic system attempts to classify geographical regions as vulnerable to landslides using satellite imagery, serving as an early-warning prototype.
 
-We utilize a **Multimodal Late-Fusion Architecture**, combining:
-1. **Visual Features (RGB):** Processed via a pre-trained **ResNet50** CNN.
-2. **Physical Terrain Features (NIR, Elevation, Slope):** Processed via a custom **Terrain CNN**.
+## 🌟 Our Novelty: Multimodal Late-Fusion
+Most traditional landslide detection systems rely solely on either visual (RGB) imagery or numerical tabular data. 
+**Our novelty** lies in extracting both visual and physical data as multi-channel images and fusing them via a **Late-Fusion Architecture**:
+1. **Visual Branch:** A pre-trained ResNet50 analyzes spatial textures in the RGB (B4, B3, B2) bands.
+2. **Physical Branch:** A custom CNN analyzes exact physical terrain properties: Near-Infrared (B8) for vegetation loss, DEM for elevation, and Slope Gradient for steepness.
+By fusing these deep features before classification, the model learns the complex relationship between physical terrain vulnerability and visual landslide scars.
 
-## 📊 Dataset & Acknowledgement
+## 📈 Model Progression & Results
+We developed three progressive models to establish our findings. All were evaluated on a strictly isolated geographical test set to prevent data leakage.
+
+### 1. Baseline CNN (RGB Only)
+*   **ROC-AUC:** 0.5982
+
+### 2. Fine-Tuned ResNet50 (RGB Only)
+*   **ROC-AUC:** 0.7135 (with Optimal Thresholding at 0.239)
+
+### 3. Proposed Multimodal Late-Fusion (Final Model)
+*   **Recall (Landslides Caught):** 91%
+*   **ROC-AUC:** **0.7371**
+*   **Optimal Threshold:** 0.291
+
+*(Note: We deliberately optimized for high Recall. In disaster forecasting, a False Negative costs lives, whereas a False Positive is an acceptable caution.)*
 
 The landslide boundary demarcation dataset was provided by the **Arthur C. Clarke Institute for Modern Technologies**, the nationally mandated institution for space science activities in Sri Lanka. 
 *Prepared by: Mahesh Chathurange & W.G.N.N. Jayawardhana (Space Applications Division).*
