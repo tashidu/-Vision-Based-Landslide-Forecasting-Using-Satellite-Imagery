@@ -69,9 +69,9 @@ def load_model():
 
 @st.cache_data
 def load_metadata():
-    if os.path.exists('dataset_proposed/metadata.csv'):
-        df = pd.read_csv('dataset_proposed/metadata.csv')
-        df['npy_path'] = df['image_path'].str.replace('dataset_version_2', 'dataset_proposed').str.replace('.png', '.npy')
+    if os.path.exists('dataset_sample/metadata.csv'):
+        df = pd.read_csv('dataset_sample/metadata.csv')
+        df['npy_path'] = df['image_path'].str.replace('dataset_version_2', 'dataset_sample').str.replace('.png', '.npy')
         df = df[df['npy_path'].apply(os.path.exists)].reset_index(drop=True)
         return df
     return None
