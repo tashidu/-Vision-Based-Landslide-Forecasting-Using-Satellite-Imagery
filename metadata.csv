@@ -1,0 +1,11 @@
+sample_id,latitude,longitude,landslide_id,label,image_path,satellite,acquisition_date,cloud_percentage,resolution
+landslide_0,7.7,80.4,LS_landslide_0,1,dataset/positive/landslide_0.png,Sentinel-2A,2026-01-01,0.0,10m
+landslide_1,7.7,80.4,LS_landslide_1,1,dataset/positive/landslide_1.png,Sentinel-2A,2026-01-01,0.0,10m
+landslide_2,7.7,80.4,LS_landslide_2,1,dataset/positive/landslide_2.png,Sentinel-2A,2026-01-01,0.0,10m
+landslide_3,7.7,80.4,LS_landslide_3,1,dataset/positive/landslide_3.png,Sentinel-2A,2026-01-01,0.0,10m
+landslide_4,7.7,80.4,LS_landslide_4,1,dataset/positive/landslide_4.png,Sentinel-2A,2026-01-01,0.0,10m
+non_landslide_0,7.7,80.4,NON_non_landslide_0,0,dataset/negative/non_landslide_0.png,Sentinel-2A,2026-01-01,0.0,10m
+non_landslide_1,7.7,80.4,NON_non_landslide_1,0,dataset/negative/non_landslide_1.png,Sentinel-2A,2026-01-01,0.0,10m
+non_landslide_2,7.7,80.4,NON_non_landslide_2,0,dataset/negative/non_landslide_2.png,Sentinel-2A,2026-01-01,0.0,10m
+non_landslide_3,7.7,80.4,NON_non_landslide_3,0,dataset/negative/non_landslide_3.png,Sentinel-2A,2026-01-01,0.0,10m
+non_landslide_4,7.7,80.4,NON_non_landslide_4,0,dataset/negative/non_landslide_4.png,Sentinel-2A,2026-01-01,0.0,10m

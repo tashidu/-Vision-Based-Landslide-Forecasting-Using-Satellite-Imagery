@@ -1,0 +1,14 @@
+numpy
+pandas
+geopandas
+earthengine-api
+requests
+tqdm
+scikit-learn
+matplotlib
+seaborn
+tensorflow
+torch
+torchvision
+pillow
+ipykernel

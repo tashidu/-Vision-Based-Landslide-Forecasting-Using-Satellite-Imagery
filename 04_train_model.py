@@ -65,16 +65,17 @@ resnet_train_datagen = ImageDataGenerator(
 resnet_val_test_datagen = ImageDataGenerator(preprocessing_function=preprocess_input)
 
 def make_gen(datagen_train, datagen_val):
+    classes = ['0', '1']
     train = datagen_train.flow_from_dataframe(
-        df_train, x_col='image_path', y_col='label_str',
+        df_train, x_col='image_path', y_col='label_str', classes=classes,
         target_size=IMG_SIZE, batch_size=BATCH_SIZE,
         class_mode='binary', shuffle=True)
     val = datagen_val.flow_from_dataframe(
-        df_val, x_col='image_path', y_col='label_str',
+        df_val, x_col='image_path', y_col='label_str', classes=classes,
         target_size=IMG_SIZE, batch_size=BATCH_SIZE,
         class_mode='binary', shuffle=False)
     test = datagen_val.flow_from_dataframe(
-        df_test, x_col='image_path', y_col='label_str',
+        df_test, x_col='image_path', y_col='label_str', classes=classes,
         target_size=IMG_SIZE, batch_size=BATCH_SIZE,
         class_mode='binary', shuffle=False)
     return train, val, test
