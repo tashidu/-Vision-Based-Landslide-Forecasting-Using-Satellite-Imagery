@@ -87,3 +87,10 @@ By prioritizing a lower threshold, the system acts as a highly sensitive early-w
 ## ⚠️ Important Scientific and Ethical Considerations
 
 This is strictly an **experimental academic system**. Satellite imagery alone is insufficient for operational disaster warnings. A real-world deployment requires integration with real-time rainfall sensors, soil moisture data, geological mapping, and validation by certified geologists. **Do not use this system to create public alarm or make unsupported safety claims.**
+
+## 🛑 Dataset Disclaimer
+This landslide boundary demarcation dataset related to Cyclone Ditwah – 2025 has been prepared by the Arthur C. Clarke Institute for Modern Technologies (ACCIMT) using available satellite data and standard analytical methods. While every effort has been made to ensure the accuracy and reliability of the information, ACCIMT makes no guarantee, express or implied, regarding the completeness, accuracy, or suitability of the data for any specific purpose.
+
+The data is provided for research, academic, planning, and decision-support purposes only. ACCIMT shall not be held responsible for any errors, omissions, or consequences arising from the use, interpretation, or application of this dataset.
+
+Users are advised to independently verify the data before using it for operational, legal, or commercial purposes. Any use of this dataset should appropriately acknowledge the Arthur C. Clarke Institute for Modern Technologies (ACCIMT).
